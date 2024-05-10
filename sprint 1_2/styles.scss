@@ -1,5 +1,22 @@
 
+$rectangle-width: 500px; 
+$rectangle-height: 250px;
+$border-radius-left: 100px;
+$offset-right: 20px; 
+$offset-down: 20px; 
 
+.rectangle {
+
+   width: $rectangle-width;
+   height: $rectangle-height;
+   background-color: rgb(66, 41, 255);
+   border-top-left-radius: $border-radius-left;
+   border-bottom-left-radius: $border-radius-left;
+   position: absolute;
+
+
+   
+}
 
 
 
