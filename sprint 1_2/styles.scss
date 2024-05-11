@@ -2,21 +2,53 @@
 $rectangle-width: 500px; 
 $rectangle-height: 250px;
 $border-radius-left: 100px;
-$offset-right: 20px; 
+$offset-right: 300px; 
 $offset-down: 20px; 
+$red: #dc3545;
 
+
+
+
+
+
+.imgHero{
+   position: relative;
+   z-index: 1;
+}
 .rectangle {
 
    width: $rectangle-width;
    height: $rectangle-height;
-   background-color: rgb(66, 41, 255);
+   background-color: rgb(54, 70, 249);
    border-top-left-radius: $border-radius-left;
    border-bottom-left-radius: $border-radius-left;
    position: absolute;
+   z-index: 0;
+   top: $offset-right;
 
-
-   
 }
+
+.img-2{
+   position: relative;
+   z-index: 1;
+
+}
+.rectangle-2 {
+
+   width: $rectangle-width;
+   height: $rectangle-height;
+   background-color: rgb(54, 70, 249);
+   border-top-right-radius: $border-radius-left;
+   border-bottom-right-radius: $border-radius-left;
+   position: absolute;
+   z-index: 0;
+   top: 1050px
+   
+
+}
+
+
+
 
 
 
