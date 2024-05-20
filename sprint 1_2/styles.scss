@@ -75,8 +75,6 @@ body{
 }
 
 header{
-
-
    .nav-link{
       text-decoration: none;
       text-transform: uppercase;
@@ -155,7 +153,7 @@ header{
 }
 
 .browser-info{
-   padding: 40px;
+   padding: 30px;
    border-radius: 10px;
 }
 
@@ -168,21 +166,19 @@ header{
 .accordion-header {
    display: flex;
    align-items: center;
-   justify-content: space-between; // Распределение пространства между текстом и стрелкой
-   border-bottom: 1px solid $grey; // Линия границы снизу
+   justify-content: space-between;
+   border-bottom: 1px solid $grey; 
    padding: 10px;
-   cursor: pointer; // Указатель курсора при наведении
+   cursor: pointer; 
 
    .text {
-     flex: 1; // Текст занимает оставшееся пространство
+   flex: 1;
    }
 
    .arrow {
-     flex: 0; // Стрелка занимает минимальное необходимое пространство
+   flex: 0; 
 
-   &.red-arrow .arrow-img {
-      filter: invert(28%) sepia(80%) saturate(5158%) hue-rotate(356deg) brightness(94%) contrast(102%);
-   }
+
    }
 
    .arrow-img {
@@ -240,19 +236,30 @@ header{
       font-weight: 400;
       font-style: normal;
    }
+
 }
 
 .footer-2{
    background-color: $footercolor;
+
 
 .footer-text {
       color: white;
       text-transform: uppercase;
       font-size: 11px;
       letter-spacing: 2px;
+
+      &:hover{
+         color: $danger;
+         cursor: pointer;
+         
+      }
+
+      }
    }
 
-}
+
+
 
 .input-wrapper::after {
    content: "";
@@ -325,18 +332,21 @@ header{
 }
 
 
-   .footer .row.justify-content-center.align-items-center {
-   justify-content: center;
-   }
 
-   .footer .row.justify-content-center.align-items-center .col-lg-auto {
+
+   .footer .row.justify-content-center.col-lg-auto {
    text-align: center;
    width: 100%;
    }
 
-   .footer .row.justify-content-center.align-items-center .btn {
-   margin: 0 auto;
-   margin-top: 10px;
+   .footer{
+      .btn.btn-danger {
+         display: block;
+         
+         max-width: 150px;
+         margin: 0 auto;
+         margin-top: 10px;
+         
    }
 
 
@@ -369,7 +379,7 @@ header{
 
 }
 
-
+}
 
 
 @media (max-width: 768px) {
@@ -381,7 +391,7 @@ justify-content: center;
    
    .row {
    margin: 0; 
-    
+   
    .imgHero{
       margin: 20px;
       
@@ -390,7 +400,6 @@ justify-content: center;
 
    .img-container {
       justify-content: center;
-       
       margin: 0; 
 
       

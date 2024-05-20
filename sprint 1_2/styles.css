@@ -108,7 +108,7 @@ header .nav-link:hover {
 }
 
 .browser-info {
-  padding: 40px;
+  padding: 30px;
   border-radius: 10px;
 }
 
@@ -129,9 +129,6 @@ header .nav-link:hover {
 }
 .accordion-header .arrow {
   flex: 0;
-}
-.accordion-header .arrow.red-arrow .arrow-img {
-  filter: invert(28%) sepia(80%) saturate(5158%) hue-rotate(356deg) brightness(94%) contrast(102%);
 }
 .accordion-header .arrow-img {
   width: 16px;
@@ -186,6 +183,10 @@ header .nav-link:hover {
   font-size: 11px;
   letter-spacing: 2px;
 }
+.footer-2 .footer-text:hover {
+  color: #FA5959;
+  cursor: pointer;
+}
 
 .input-wrapper::after {
   content: "";
@@ -228,32 +229,31 @@ header .nav-link:hover {
     align-items: center;
     justify-content: center;
   }
-  .footer .row.justify-content-center.align-items-center {
-    justify-content: center;
-  }
-  .footer .row.justify-content-center.align-items-center .col-lg-auto {
+  .footer .row.justify-content-center.col-lg-auto {
     text-align: center;
     width: 100%;
   }
-  .footer .row.justify-content-center.align-items-center .btn {
+  .footer .btn.btn-danger {
+    display: block;
+    max-width: 150px;
     margin: 0 auto;
     margin-top: 10px;
   }
-  .footer-2 .footer-text {
+  .footer .footer-2 .footer-text {
     flex: auto;
     justify-content: center;
   }
-  .footer-2 .logos {
+  .footer .footer-2 .logos {
     flex: content;
     justify-content: center;
   }
-  .footer-2 .icons-container {
+  .footer .footer-2 .icons-container {
     margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .footer-2 .icons-container img {
+  .footer .footer-2 .icons-container img {
     margin: 0 10px;
   }
 }

@@ -6,23 +6,7 @@
    <title>Document</title>
    <link rel="stylesheet" href="styles.css">
    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-   <script>function validateEmail() {
-      let emailInput = document.getElementById('emailInput');
-      let error = document.getElementById('error');
-      let email = emailInput.value;
-      let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-   
-      if (!emailPattern.test(email)) {
 
-      emailInput.classList.add('error');
-      error.textContent = 'Whoops, make sure it\'s an email';
-      } else {
-   
-      emailInput.classList.remove('error');
-      error.textContent = '';
-   }
-}
-   </script>
 </head>
 <body>
    <header>
@@ -75,36 +59,32 @@
       <h3 class="col-12">Features</h3>
       <p class="col-lg-5 mt-3">Our aim is to make it quick and easy for your to access your favorite websites. Your bookmarks sync between your devices so you can access them on the go </p>
    </div>
-
    <div class="container nav nav-underline justify-content-center mt-4">
       <div class="col-lg-3 nav-item1">
-         <a class="nav-link active" href="#nav-item1">Simple bookmarking</a>
+         <a class="nav-link active" href="#nav-item1" data-tab="1">Simple bookmarking</a>
       </div>
       <div class="col-lg-3 col-md-12 col-sm-12 nav-item2">
-         <a class="nav-link" href="#nav-item2">Speady searching</a>
+         <a class="nav-link" href="#nav-item2" data-tab="2">Speady searching</a>
       </div>
       <div class="col-lg-3 col-md-12 col-sm-12 nav-item3">
-         <a class="nav-link" href="#nav-item3">Easy sharing</a>
+         <a class="nav-link" href="#nav-item3" data-tab="3">Easy sharing</a>
       </div>
-      </div>
-   </div>
+</div>
 
-
-
-   <div class="container top-2 d-flex justify-content-around  mt-lg-5">
+<div class="container top-2 d-flex justify-content-around mt-lg-5">
       <div class="row mt-5">
          <div class="col-lg-8 col-md-12 col-sm-12 img-container d-flex d-flex justify-content-center position-relative">
             <img class="img-2 offset-2" src="/Imagenes/illustration-features-tab-1.svg" alt="illustration-hero">
-            <img class="rectangle-2  align-self-end "></img>
+            <img class="rectangle-2 align-self-end">
          </div>
-         <div class="text-2 col-lg-4 col-lg-3  align-self-center">
-            <h2>Bookmark in one click</h2>
-            <p class="mt-4">Organize your bookmark howewer you like. Our simle drag-and-drop interface gives you complete control over how you manage your favorite sites.</p>
+         <div class="text-2 col-lg-4 col-lg-3 align-self-center">
+            <h2 id="title">Simple Bookmarking</h2>
+            <p class="mt-4" id="description">Easily bookmark your favorite sites with one click.</p>
             <div class="btn btn-primary mt-4">More info</div>
-
          </div>
       </div>
-   </div>
+</div>
+
 <div class="container mt-5">
    <div class="row">
       <div class="col-12"></div>
@@ -239,14 +219,15 @@
 
    </div>
 </div>
+</div>
 
-   </div>
-   <div class="container-fluid footer py-5 mt-5">
-      <div class="row py-3 d-flex justify-content-center text-center">
+
+   <div class="container-fluid footer py-5 mt-5 justify-content-center">
+      <div class="row py-3 d-flex justify-content-center text-center ">
          <div class="col-12 mt-4 text-1">35.000+ already joined</div>
          <div class="col-lg-6 mt-4 text-2">Stay up-to-date with what we're doing</div>
       </div>
-      <div class="row justify-content-center align-items-center">
+      <div class="row justify-content-center">
          <div class="col-auto input-wrapper">
             <input id="emailInput" type="text" class="form-control" placeholder="Enter your e-mail address">
             <span id="error" class="error-message"></span>
@@ -258,7 +239,7 @@
    </div>
    
 
-</div>
+
    
 
 <div class="container-fluid footer-2">
@@ -278,6 +259,68 @@
 
 
 
+
+
+
+
+<script>function validateEmail() {
+   let emailInput = document.getElementById('emailInput');
+   let error = document.getElementById('error');
+   let email = emailInput.value;
+   let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+   if (!emailPattern.test(email)) {
+
+   emailInput.classList.add('error');
+   error.textContent = 'Whoops, make sure it\'s an email';
+   } else {
+
+   emailInput.classList.remove('error');
+   error.textContent = '';
+}
+}
+
+
+
+// document.addEventListener("DOMContentLoaded", function() {
+//    const tabs = document.querySelectorAll(".nav-link");
+//    const img = document.querySelector(".img-2");
+//    const title = document.getElementById("title");
+//    const description = document.getElementById("description");
+
+//    tabs.forEach(tab => {
+//       tab.addEventListener("click", function(event) {
+//             event.preventDefault();
+//             const tabId = this.getAttribute("data-tab");
+
+//             switch(tabId) {
+//                case "1":
+//                   img.src = "/Imagenes/illustration-features-tab-1.svg";
+//                   title.textContent = "Bookmark in one click";
+//                   description.textContent = "Organize your bookmark howewer you like. Our simple drag-and-drop interface gives you complete control over how you manage your favorite sites.";
+//                   break;
+//                case "2":
+//                   img.src = "/Imagenes/illustration-features-tab-2.svg";
+//                   title.textContent = "Intelligent search";
+//                   description.textContent = "Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.";
+//                   break;
+//                case "3":
+//                   img.src = "/Imagenes/illustration-features-tab-3.svg";
+//                   title.textContent = "Share your bookmarks";
+//                   description.textContent = "Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.";
+//                   break;
+//                default:
+//                   console.error("Unknown tab ID:", tabId);
+//                   break;
+//             }
+
+//          document.querySelector(".nav-link.active").classList.remove("active");
+//             his.classList.add("active");
+//       });
+//    });
+// });
+
+</script>
 
 
 
