@@ -28,7 +28,7 @@ Este repositorio contiene una landing page (proyecto de estudios) que funciona t
 
 1. Clona el repositorio:
     ```bash
-    git clone https://github.com/usuario/gestor-de-marcadores.git
+    git clone https://github.com/Yana-jev/sprint-1_2/tree/main
     ```
 
 2. Navega al directorio del proyecto:
