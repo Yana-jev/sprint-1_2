@@ -61,29 +61,31 @@
    </div>
    <div class="container nav nav-underline justify-content-center mt-4">
       <div class="col-lg-3 nav-item1">
-         <a class="nav-link active" href="#nav-item1" data-tab="1">Simple bookmarking</a>
+         <a class="nav-link active" href="#nav-item1" data-tab="1" id="pills-home-tab">Simple bookmarking</a>
       </div>
       <div class="col-lg-3 col-md-12 col-sm-12 nav-item2">
-         <a class="nav-link" href="#nav-item2" data-tab="2">Speady searching</a>
+         <a class="nav-link" href="#nav-item2" data-tab="2" id="pills-profile-tab">Speady searching</a>
       </div>
       <div class="col-lg-3 col-md-12 col-sm-12 nav-item3">
          <a class="nav-link" href="#nav-item3" data-tab="3">Easy sharing</a>
       </div>
 </div>
 
-<div class="container top-2 d-flex justify-content-around mt-lg-5">
-      <div class="row mt-5">
+<div class="container top-2  mt-lg-5">
+      <div class="row mt-5 justify-content-between" aria-labelledby="pills-home-tab">
          <div class="col-lg-8 col-md-12 col-sm-12 img-container d-flex d-flex justify-content-center position-relative">
             <img class="img-2 offset-2" src="/Imagenes/illustration-features-tab-1.svg" alt="illustration-hero">
             <img class="rectangle-2 align-self-end">
          </div>
          <div class="text-2 col-lg-4 col-lg-3 align-self-center">
-            <h2 id="title">Simple Bookmarking</h2>
-            <p class="mt-4" id="description">Easily bookmark your favorite sites with one click.</p>
+            <h2 id="title">Bookmark in one click</h2>
+            <p class="mt-4" id="description">Organize your bookmark howewer you like. Our simple drag-and-drop interface gives you complete control over how you manage your favorite sites.</p>
             <div class="btn btn-primary mt-4">More info</div>
          </div>
       </div>
 </div>
+</div>
+
 
 <div class="container mt-5">
    <div class="row">
@@ -137,7 +139,54 @@
       </div>
    </div>
 
-   <div class="container">
+
+   
+   <div class="accordion " id="accordionExample">
+      
+            <div class="row justify-content-center" >
+               <div class="col-8">
+               <div class="accordion-item">
+               <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                     What is Bookmark?
+                  </button>
+               </h2>
+               <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                     <strong>How can I request a new browser?</strong><br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste totam mollitia expedita accusamus! Dolorem mollitia voluptatum dolores veritatis enim recusandae pariatur iste. Voluptatibus quibusdam doloribus adipisci rem ratione ducimus quos!
+                  </div>
+               </div>
+               </div>
+               <div class="accordion-item">
+               <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                     Is there a mobile app?
+                  </button>
+               </h2>
+               <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                     <strong>How can I request a new browser_second?</strong><br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque nemo, eos reiciendis hic, neque excepturi similique temporibus consectetur quibusdam possimus repudiandae dolorum soluta repellat optio quos ullam culpa explicabo numquam.
+                  </div>
+               </div>
+               </div>
+               <div class="accordion-item">
+               <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                     What about other Chromium?
+                  </button>
+               </h2>
+               <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                     <strong>How can I request a new browser_3?</strong><br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae modi minima quo similique placeat eligendi facere ullam mollitia, alias nobis ex distinctio architecto earum optio, deserunt amet, aperiam facilis. Cumque.
+                  </div>
+               </div>
+               </div>
+         </div>
+         </div>
+      </div>
+
+<!-- alternative code para el accordion -->
+   <!-- <div class="container">
       <div class="row justify-content-center">
       <div class="col-8">
          
@@ -148,12 +197,12 @@
             </div>
          </div>
          
-         <div class="collapse" id="collapseExample1 ">
+         <div class="collapse" id="collapseExample1">
             <div class="accordion-content">
             
             <div class="accordion-subheader">
                <div class="text"><strong>How can I request a new browser?</strong></div>
-               <div class="arrow red-arrow">
+               <div class="arrow red-ar row">
                   <img src="Imagenes/arrowRed.svg" alt="arrow" class="arrow-img">
                </div>
             </div>
@@ -189,7 +238,7 @@
 
          <div class="accordion-header" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample">
             <div class="text">What about other Chromium?</div>
-            <div class="arrow">
+            <div class="accordion-button collapsed arrow">
             <img src="Imagenes/icon-arrow.svg" alt="arrow" class="arrow-img">
             </div>
          </div>
@@ -211,7 +260,7 @@
          </div>
       </div>
       </div>
-   </div>
+   </div> -->
 
 <div class="container d-flex justify-content-center mt-4">
    <div class="row ">

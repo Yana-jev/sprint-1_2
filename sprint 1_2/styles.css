@@ -116,6 +116,10 @@ header .nav-link:hover {
   border: none;
 }
 
+.accordion-item {
+  border: none;
+}
+
 .accordion-header {
   display: flex;
   align-items: center;
@@ -123,32 +127,6 @@ header .nav-link:hover {
   border-bottom: 1px solid #98999b;
   padding: 10px;
   cursor: pointer;
-}
-.accordion-header .text {
-  flex: 1;
-}
-.accordion-header .arrow {
-  flex: 0;
-}
-.accordion-header .arrow-img {
-  width: 16px;
-  height: auto;
-}
-
-.accordion-content {
-  padding: 10px;
-}
-.accordion-content .accordion-subheader {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-bottom: 10px;
-}
-.accordion-content .accordion-subheader .text {
-  flex: 1;
-}
-.accordion-content .accordion-subheader .arrow {
-  flex: 0;
 }
 
 .footer {
